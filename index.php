@@ -12,19 +12,29 @@
 			}
 		}
 		.wrapper{
-			border:1px solid white;
-			padding: 0.7rem;
+			border:1px solid #419da7;
+			padding: 1rem;
 		}
 
 		table,th,td{
-			border:1px solid white;
+			border:1px solid #419da7;
+		}
+
+		#machineries-input>div{
+			border:1px solid #419da7;
+			padding:1rem;
+		}
+		#property-appraisal>div{
+			border:1px solid #419da7;
+			padding:1rem;
 		}
 	</style>
 </head>
 <body>
-<div class="container p-5 my-5 bg-dark text-light" style="border:2px solid black; border-radius:20px;">
-		<h1 class="text-center my-3">
-		REAL PROPERTY FIELD APPRAISAL & ASSESSMENT SHEET - MACHINERY</h1>
+<div class="container p-5 my-5 text-light" style="border:2px solid black; border-radius:20px; background-color: #1c2a52!important">
+		<h4 class="text-center my-3">
+		REAL PROPERTY FIELD APPRAISAL & ASSESSMENT SHEET</h4>
+		<h1 class="text-center my-3" style="color:#69dce8!important;">MACHINERY</h1>
 		<!-- personal information -->
 	<form action="" method="POST" enctype="multipart/form-data">
 		<!-- personal information -->
@@ -191,142 +201,145 @@
 				</div>
 			</div>		
 		</div>
-		<button type="button" class="btn btn-success mt-5">Add +</button>
+		
 		<!-- machineries -->
-		<table class="table table-dark mt-3">
-			<thead>
-				<tr class="text-center">
-					<th>Machinery Description</td>
-					<th>Brand & Model No.</th>
-					<th>Capacity</th>
-					<th>Date Acquired</th>
-					<th>Condition When Acquired</th>
-					<th>Economic Life</th>
-					<th>Date of Installation</th>
-					<th>Date of Operation</th>
-					<th>Remarks</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-				</tr>
-			</tbody>
-		</table>
+		<!-- what the hell is the title here? insert title -->
+		<h3 class="mt-5" style="color:#69dce8!important;">Insert title here</h3>
 
-		<button type="button" class="btn btn-success mt-5">Add +</button>
-		<h3 class="my-3">Property Appraisal</h3>
-		<table class="table table-dark mt-3">
-			<thead>
-				<tr>
-					<th>Machinery Description</th>
-					<th>No. Of Units</th>
-					<th>Acquisition Cost</th>
-					<th>Freight</th>
-					<th>Insurance</th>
-					<th>Installation</th>
-					<th>Others</th>
-					<th>Market Value</th>
-					<th>Depreciation</th>
-					<th>Deprectiation Market Value</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="">
-					</td>
-				</tr>	
-			</tbody>
-		</table>
-		<!-- total -->
-		<h3>Total:</h3>
-		<p>0.00 PHP</p>
+		<div class="btn-group mt-3">
+			<button name="add-machinery" type="button" class="btn btn-success">Add</button>
+			<button name="delete-machinery" type="button" class="btn btn-danger">Delete</button>
+		</div>
+
+		<div id="machineries-input" class="wrapper mt-3" >
+			<div name="machinery#1" class="row mx-auto my-3">
+
+				<h4>Machinery #1</h4>
+
+				<div class="form-group col-md-3">
+					<label>Machinery Description</label>
+					<input class="form-control" type="text" name="machinery-description1">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Brand & Model No.</label>
+					<input class="form-control" type="text" name="brand-model1">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Capacity</label>
+					<input class="form-control" type="text" name="capacity1">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Date Acquired</label>
+					<input class="form-control" type="date" name="date-acquired1">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Condition When Acquired</label>
+					<select class="form-control" name="condition1">
+						<option value="" selected>Choose condition</option>
+						<option value="Good">Good</option>
+						<option value="Poor">Poor</option>
+					</select>
+				</div>
+				<div class="form-group col-md-3">
+					<label>Economic Life</label>
+					<input class="form-control" type="text" name="economic-life1">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Date of Installation</label>
+					<input class="form-control" type="date" name="date-of-installation1">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Date of Operation</label>
+					<input class="form-control" type="date" name="date-of-operation1">
+				</div>
+				<div class="form-group col-md-12">
+					<label>Remarks</label>
+					<input class="form-control" type="text" name="remarks1">
+				</div>
+			</div>
+
+		</div>
+
+		<!-- property appraisal --> 
+		<h3 class="mt-5" style="color:#69dce8!important;">Property Appraisal</h3>
+
+		<div class="btn-group mt-3">
+			<button name="add-appraisal" type="button" class="btn btn-success">Add</button>
+			<button name="remove-appraisal" type="button" class="btn btn-danger">Delete</button>
+		</div>
+
+		<div id="property-appraisal" class="wrapper mt-3">
+			<div name="appraisal#1" class="row mx-auto my-3">
+				<h4>Appraisal #1</h4>
+				<div class="form-group col-md-3">
+					<label>Machinery Description</label>
+					<input class="form-control" type="text" name="machinery-description-appraisal">
+				</div>
+				<div class="form-group col-md-3">
+					<label>No. Of Units</label>
+					<input class="form-control" type="number" min="0" name="no-of-units">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Acquisition Cost</label>
+					<input class="form-control" type="number" min="0" name="acquisition-cost">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Freight</label>
+					<input class="form-control" type="text" name="freight">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Insurance</label>
+					<input class="form-control" type="text" name="insurance">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Installation</label>
+					<input class="form-control" type="text" name="installation">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Others</label>
+					<input class="form-control" type="text" name="others">
+				</div>
+				<div class="form-group col-md-3">
+					<label>Market Value</label>
+					<input class="form-control" type="number" min="0" name="market-value">
+				</div>
+				<div class="form-group col-md-6">
+					<label>Depreciation(%)</label>
+					<input class="form-control" type="number" min="0" name="depreciation">
+				</div>
+				<div class="form-group col-md-6">
+					<label>Depreciation Market Value</label>
+					<input class="form-control" type="number" min="0" name="depreciation-market-value">
+				</div>
+			</div>
+		</div>
+
+		<h3 class="lead mt-2">Total:</h3>
+
+		<input style="width:50%;"class="form-control" type="number" min="0" name="total-property-appraisal">
+		
 
 		<!-- property assessment -->
-		<h3 class="mt-5">Property Assessment</h3>
-		<table class="table table-dark">
-			<thead>
-				<tr>
-					<th>Kind</th>
-					<th>Market Value</th>
-					<th>Assessment Level</th>
-					<th>Assessed Value</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<input class="form-control" type="text" name="kind">
-					</td>
-					<td>
-						<input class="form-control" type="number" name="market-value">
-					</td>
-					<td>
-						<input class="form-control" type="text" name="assessment-level">
-					</td>
-					<td>
-						<input class="form-control" type="number" name="assessed-value">
-					</td>
-				</tr>
-				<tr>
-					<td colspan="4">Total</td>
-				</tr>
-			</tbody>
-		</table>
+		<h3 class="mt-5" style="color:#69dce8!important;">Property Assessment</h3>
+		<div class="row wrapper">
+			<div class="form-group col-md-3">
+				<label>Kind</label>
+				<input class="form-control" type="text" name="kind">
+			</div>
+			<div class="form-group col-md-3">
+				<label>Market Value</label>
+				<input class="form-control" type="number" min="0" name="market-value">
+			</div>
+			<div class="form-group col-md-3">
+				<label>Assessment Level</label>
+				<input class="form-control" type="number" min="0" name="assessment-level">
+			</div>
+			<div class="form-group col-md-3">
+				<label>Assessed Value</label>
+				<input class="form-control" type="number" min="0" name="assessed-value">
+			</div>
+		</div>
+
 		<!-- owners -->
 		<div class="row wrapper mt-5">
 			<div class="form-group col-md-6">
@@ -351,7 +364,7 @@
 			</div>
 		</div>
 		<!-- appraised/assessed/approval -->
-		<div class="row mt-5">
+		<div class="row wrapper mt-5">
 			<div class="form-group col-md-3">
 				<label>Appraised by:</label>
 				<input class="form-control" type="text" name="appraised-by">
@@ -380,13 +393,13 @@
 		</div>
 
 		<!-- memoranda -->
-		<h3 class="mt-5">Memoranda</h3>
+		<h3 class="mt-5" style="color:#69dce8!important;">Memoranda</h3>
 		<div class="form-group">
 			<textarea class="form-control" name="memoranda" rows="5"></textarea>
 		</div>
 
-		<h3 class="mt-5">Reference and Posting Summary</h3>
-		<table class="table table-dark">
+		<h3 class="mt-5" style="color:#69dce8!important;">Reference and Posting Summary</h3>
+		<table class="table text-light">
 			<thead class="text-center">
 				<tr>
 					<th colspan="2">Pre & Post Inspection</th>
@@ -398,27 +411,27 @@
 			<tbody>
 				<tr>
 					<td class="text-center">PIN</td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name="" placeholder="initial"></td>
-					<td><input class="form-control" type="text" name="" placeholder="date"></td>
+					<td><input class="form-control" type="number" name="pin" placeholder="pin"></td>
+					<td><input class="form-control" type="number" name="previous-pin" placeholder="previous"></td>
+					<td><input class="form-control" type="number" name="present-pin" placeholder="present"></td>
+					<td><input class="form-control" type="text" name="pin-initial" placeholder="initial"></td>
+					<td><input class="form-control" type="date" name="pin-date" placeholder="date"></td>
 				</tr>
 				<tr>
 					<td class="text-center">TDN/ARP</td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name="" placeholder="initial"></td>
-					<td><input class="form-control" type="text" name="" placeholder="date"></td>
+					<td><input class="form-control" type="text" name="TDN/ARP" placeholder="TDN/ARP"></td>
+					<td><input class="form-control" type="text" name="TDN/ARP-previous" placeholder="previous"></td>
+					<td><input class="form-control" type="text" name="TDN/ARP-present" placeholder="present"></td>
+					<td><input class="form-control" type="text" name="TDN/ARP-initial" placeholder="initial"></td>
+					<td><input class="form-control" type="date" name="TDN/ARP-date" placeholder="date"></td>
 				</tr>
 				<tr>
 					<td class="text-center">ASS.ROLL PAGE & NO.</td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name="" placeholder="initial"></td>
-					<td><input class="form-control" type="text" name="" placeholder="date"></td>
+					<td><input class="form-control" type="text" name="ass-no." placeholder="Ass.roll page & no."></td>
+					<td><input class="form-control" type="text" name="ass-previous" placeholder="previous"></td>
+					<td><input class="form-control" type="text" name="ass-present" placeholder="present"></td>
+					<td><input class="form-control" type="text" name="ass-initial" placeholder="initial"></td>
+					<td><input class="form-control" type="date" name="ass-date" placeholder="date"></td>
 				</tr>
 			</tbody>
 		</table>
